@@ -7,8 +7,8 @@
     "start": "webpack-dev-server --config ./webpack/webpack.config.js --env.env=dev",
     "build": "npm run clean && webpack --config ./webpack/webpack.config.js --env.env=prod",
     "lint": "npx eslint --fix --ext .js,.jsx,.ts,.tsx ./src",
-    "check:pre-commit": "npm run lint && npm test",
-    "check:pre-push": "npm run check:pre-commit && npm run loki:test",
+    "check:pre-commit": "npm run lint",
+    "check:pre-push": "npm run check:pre-commit",
     "commit": "npx git-cz",
     "serve": "serve ./build",
     "clean": "rm -rf ./build"
