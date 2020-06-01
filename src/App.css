@@ -1,0 +1,11 @@
+.app {
+  margin-top: 40px;
+}
+
+.app__title {
+  margin-bottom: 20px;
+}
+
+.app__toolbar {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,23 @@
+.list__item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.list__item--invalid::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  top: 0;
+  left: -1px;
+  bottom: 0;
+  background-color: rgba(255, 0, 0, 1);
+}
+
+/* rewrite bootstrap styles */
+.list-group-item.active {
+  background-color: #5dabff;
+  border-color: #5dabff;
+}

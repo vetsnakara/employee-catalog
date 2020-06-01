@@ -1,0 +1,12 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toolbar__buttons {
+  display: flex;
+}
+
+.toolbar__buttons > *:not(:last-child) {
+  margin-right: 10px;
+}
